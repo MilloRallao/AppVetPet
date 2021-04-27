@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview_vacuna_mascota_cliente"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:backgroundTint="@color/colorAccent"
+    android:backgroundTintMode="add"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow_cardview">
+
+        <TextView
+            android:id="@+id/textView_texto_vacuna_mascota_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_vacuna_textview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_vacuna_mascota_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/textView_texto_vacuna_mascota_cliente"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_texto_fecha_vacuna_mascota_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/text_fecha_vacuna_textview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_texto_vacuna_mascota_cliente" />
+
+        <TextView
+            android:id="@+id/textView_fecha_vacuna_mascota_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@+id/textView_texto_fecha_vacuna_mascota_cliente"
+            app:layout_constraintTop_toBottomOf="@+id/textView_vacuna_mascota_cliente" />
+
+        <TextView
+            android:id="@+id/textView_texto_siguiente_fecha_vacuna_mascota_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/text_siguiente_fecha_textview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_texto_fecha_vacuna_mascota_cliente" />
+
+        <TextView
+            android:id="@+id/textView_siguiente_fecha_vacuna_mascota_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@+id/textView_texto_siguiente_fecha_vacuna_mascota_cliente"
+            app:layout_constraintTop_toBottomOf="@+id/textView_fecha_vacuna_mascota_cliente" />
+
+        <TextView
+            android:id="@+id/textView_texto_dosis_actual_vacuna_mascota_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/text_dosis_actual_textview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_texto_siguiente_fecha_vacuna_mascota_cliente" />
+
+        <TextView
+            android:id="@+id/textView_dosis_actual_vacuna_mascota_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@+id/textView_texto_dosis_actual_vacuna_mascota_cliente"
+            app:layout_constraintTop_toBottomOf="@+id/textView_siguiente_fecha_vacuna_mascota_cliente" />
+
+        <TextView
+            android:id="@+id/textView_texto_siguiente_dosis_vacuna_mascota_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/text_siguiente_dosis_textview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_texto_dosis_actual_vacuna_mascota_cliente" />
+
+        <TextView
+            android:id="@+id/textView_siguiente_dosis_vacuna_mascota_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@+id/textView_texto_siguiente_dosis_vacuna_mascota_cliente"
+            app:layout_constraintTop_toBottomOf="@+id/textView_dosis_actual_vacuna_mascota_cliente" />
+
+        <ImageView
+            android:id="@+id/imageView_dosis_vacuna_mascota_cliente"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/primera_dosis" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton_editar_vacuna_mascota_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="@color/colorAccent"
+            android:clickable="true"
+            android:tint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxImageSize="30dp"
+            app:srcCompat="@drawable/icono_editar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

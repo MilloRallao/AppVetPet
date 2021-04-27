@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cliente.pantalla_consulta_online"
+    android:background="#242832">
+
+    <ImageButton
+        android:id="@+id/imageButton_nueva_consulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_consulta_online_usuario"
+        app:srcCompat="@drawable/consulta_nueva_button_selector" />
+
+    <ImageButton
+        android:id="@+id/imageButton_consultas_abiertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_nueva_consulta"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_consulta_online_usuario"
+        app:srcCompat="@drawable/consultas_abiertas_button_selector" />
+
+    <ImageButton
+        android:id="@+id/imageButton_consultas_cerradas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_nueva_consulta"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_consultas_abiertas"
+        app:srcCompat="@drawable/consultas_cerradas_button_selector" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_consulta_online_usuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/text_bienvenida_consulta_online_textview" />
+</androidx.constraintlayout.widget.ConstraintLayout>

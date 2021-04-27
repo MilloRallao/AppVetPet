@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.davidcurbelo.vetpetproyectodam">
+    <!-- Permisos -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".pantalla_mapa"></activity>
+        <!-- Parte Administrador -->
+        <activity
+            android:name=".admin.pantalla_proximas_citas_admin"
+            android:parentActivityName=".admin.pantalla_ver_citas" />
+        <activity
+            android:name=".admin.pantalla_historial_citas_admin"
+            android:parentActivityName=".admin.pantalla_ver_citas" />
+        <activity
+            android:name=".admin.pantalla_ver_citas"
+            android:parentActivityName=".admin.pantalla_principal_admin" />
+        <activity
+            android:name=".admin.pantalla_ver_cliente"
+            android:parentActivityName=".admin.pantalla_ver_clientes" />
+        <activity
+            android:name=".admin.pantalla_ver_consultas_cliente"
+            android:parentActivityName=".admin.pantalla_ver_clientes" />
+        <activity
+            android:name=".admin.pantalla_ver_citas_cliente"
+            android:parentActivityName=".admin.pantalla_ver_clientes" />
+        <activity
+            android:name=".admin.pantalla_info_mascota_cliente"
+            android:parentActivityName=".admin.pantalla_ver_mascotas_cliente" />
+        <activity
+            android:name=".admin.pantalla_agregar_diagnostico_tratamiento"
+            android:parentActivityName=".admin.pantalla_diagnosticos_mascota_cliente" />
+        <activity
+            android:name=".admin.pantalla_diagnosticos_mascota_cliente"
+            android:parentActivityName=".admin.pantalla_ver_mascotas_cliente" />
+        <activity
+            android:name=".admin.pantalla_vacunas_mascota_cliente"
+            android:parentActivityName=".admin.pantalla_ver_mascotas_cliente" />
+        <activity
+            android:name=".admin.pantalla_agregar_mascota"
+            android:parentActivityName=".admin.pantalla_ver_mascotas_cliente" />
+        <activity
+            android:name=".admin.pantalla_ver_mascotas_cliente"
+            android:parentActivityName=".admin.pantalla_ver_clientes" />
+        <activity
+            android:name=".admin.pantalla_agregar_cliente"
+            android:parentActivityName=".admin.pantalla_principal_admin" />
+        <activity
+            android:name=".admin.pantalla_mi_clinica"
+            android:parentActivityName=".admin.pantalla_principal_admin" />
+        <activity
+            android:name=".admin.pantalla_ver_clientes"
+            android:parentActivityName=".admin.pantalla_principal_admin" />
+        <activity android:name=".admin.pantalla_consultas_individual_admin" />
+        <activity
+            android:name=".admin.pantalla_consultas_cerradas_admin"
+            android:parentActivityName=".admin.pantalla_ver_consultas_online" />
+        <activity
+            android:name=".admin.pantalla_consultas_abiertas_admin"
+            android:parentActivityName=".admin.pantalla_ver_consultas_online" />
+        <activity
+            android:name=".admin.pantalla_ver_consultas_online"
+            android:parentActivityName=".admin.pantalla_principal_admin" />
+        <activity
+            android:name=".admin.pantalla_principal_admin"
+            android:parentActivityName=".pantalla_login" /> <!-- Parte Cliente -->
+        <activity
+            android:name=".cliente.pantalla_historial_citas"
+            android:parentActivityName=".cliente.pantalla_pedir_cita" />
+        <activity
+            android:name=".cliente.pantalla_proximas_citas"
+            android:parentActivityName=".cliente.pantalla_pedir_cita" />
+        <activity
+            android:name=".cliente.pantalla_confirmar_cita"
+            android:parentActivityName=".cliente.pantalla_pedir_cita" />
+        <activity
+            android:name=".cliente.pantalla_pedir_cita"
+            android:parentActivityName=".cliente.pantalla_principal_usuario" />
+        <activity
+            android:name=".cliente.pantalla_mi_mascota_vacunas"
+            android:parentActivityName=".cliente.pantalla_mi_mascota" />
+        <activity
+            android:name=".cliente.pantalla_mi_mascota_tratamientos"
+            android:parentActivityName=".cliente.pantalla_mi_mascota" />
+        <activity
+            android:name=".cliente.pantalla_mi_mascota_consultas"
+            android:parentActivityName=".cliente.pantalla_mi_mascota" />
+        <activity
+            android:name=".cliente.pantalla_mi_mascota_diagnosticos"
+            android:parentActivityName=".cliente.pantalla_mi_mascota" />
+        <activity
+            android:name=".cliente.pantalla_mi_mascota_informacion"
+            android:parentActivityName=".cliente.pantalla_mi_mascota" />
+        <activity
+            android:name=".cliente.pantalla_mi_mascota_historial_citas"
+            android:parentActivityName=".cliente.pantalla_mi_mascota" />
+        <activity
+            android:name=".cliente.pantalla_mi_mascota"
+            android:parentActivityName=".cliente.pantalla_principal_usuario" />
+        <activity android:name=".cliente.pantalla_consulta_individual" />
+        <activity
+            android:name=".cliente.pantalla_consultas_cerradas"
+            android:parentActivityName=".cliente.pantalla_consulta_online" />
+        <activity
+            android:name=".cliente.pantalla_consultas_abiertas"
+            android:parentActivityName=".cliente.pantalla_consulta_online" />
+        <activity
+            android:name=".cliente.pantalla_nueva_consulta"
+            android:parentActivityName=".cliente.pantalla_consulta_online" />
+        <activity
+            android:name=".cliente.pantalla_consulta_online"
+            android:parentActivityName=".cliente.pantalla_principal_usuario" />
+        <activity
+            android:name=".cliente.pantalla_mi_veterinario"
+            android:parentActivityName=".cliente.pantalla_principal_usuario" />
+        <activity
+            android:name=".cliente.pantalla_principal_usuario"
+            android:parentActivityName=".pantalla_login" /> <!-- Parte Registro -->
+        <activity
+            android:name=".pantalla_registro"
+            android:parentActivityName=".pantalla_login" /> <!-- Parte Login -->
+        <activity android:name=".pantalla_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- API KEY Google Maps -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+    </application>
+
+</manifest>

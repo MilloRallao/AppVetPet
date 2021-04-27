@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_mi_veterinario"
+    tools:context=".admin.pantalla_ver_cliente">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_ver_cliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_icono_cliente_ver_cliente"
+        android:layout_width="120dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_nombre_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_icono_cliente_ver_cliente" />
+
+    <ImageButton
+        android:id="@+id/imageButton_llamar_cliente_ver_cliente"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_nombre_cliente_ver_cliente"
+        app:srcCompat="@drawable/llamada_principal_button_selector" />
+
+    <TextView
+        android:id="@+id/textView_texto_id_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/text_id_cliente_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_llamar_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_id_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_llamar_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_texto_dni_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_dni_nie_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_id_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_dni_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_id_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_texto_email_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_email_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_telefono_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_email_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_telefono_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_texto_direccion_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_direccion_cliente_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_dni_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_direccion_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_dni_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_texto_localidad_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_localidad_cliente_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_direccion_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_localidad_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_direccion_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_texto_telefono_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_telefono_cliente_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_localidad_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_telefono_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_localidad_cliente_ver_cliente" />
+
+    <Button
+        android:id="@+id/button_ver_mapa_cliente_ver_cliente"
+        android:layout_width="69dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="120dp"
+        android:text="@string/text_ver_mapa_button"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_localidad_cliente_ver_cliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toEndOf="@+id/textView_telefono_cliente_ver_cliente"
+        app:layout_constraintTop_toBottomOf="@+id/textView_direccion_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_texto_numero_mascotas_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_numero_mascotas_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_email_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_numero_mascotas_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_email_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_texto_numero_citas_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_numero_citas_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_numero_mascotas_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_numero_citas_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_numero_mascotas_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_texto_numero_consultas_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_numero_consultas_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_numero_citas_cliente_ver_cliente" />
+
+    <TextView
+        android:id="@+id/textView_numero_consultas_cliente_ver_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_numero_citas_cliente_ver_cliente" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

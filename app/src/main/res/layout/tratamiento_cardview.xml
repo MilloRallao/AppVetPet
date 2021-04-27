@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview_tratamiento"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:backgroundTint="@color/colorAccent"
+    android:backgroundTintMode="add"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow_cardview">
+
+        <ImageView
+            android:id="@+id/imageView_icono_tratamiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/app_name"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/alerta_icon_v2" />
+
+        <TextView
+            android:id="@+id/textview_texto_fecha_inicio_tratamiento_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/text_fecha_inicio_textview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_fecha_inicio_tratamiento_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toEndOf="@+id/textview_texto_fecha_inicio_tratamiento_mi_mascota"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_texto_fecha_fin_tratamiento_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/text_fecha_fin_textview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView_fecha_inicio_tratamiento_mi_mascota"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_fecha_fin_tratamiento_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toEndOf="@+id/textView_texto_fecha_fin_tratamiento_mi_mascota"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_texto_farmaco_tratamiento_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/text_farmaco_tratamiento_textview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_texto_fecha_inicio_tratamiento_mi_mascota" />
+
+        <TextView
+            android:id="@+id/textView_farmaco_tratamiento_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/textView_texto_farmaco_tratamiento_mi_mascota"
+            app:layout_constraintTop_toBottomOf="@+id/textView_fecha_inicio_tratamiento_mi_mascota" />
+
+        <TextView
+            android:id="@+id/textView_texto_dosis_tratamiento_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/text_dosis_tratamientos_textview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_texto_farmaco_tratamiento_mi_mascota" />
+
+        <TextView
+            android:id="@+id/textView_dosis_tramiento_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/textView_texto_dosis_tratamiento_mi_mascota"
+            app:layout_constraintTop_toBottomOf="@+id/textView_farmaco_tratamiento_mi_mascota" />
+
+        <TextView
+            android:id="@+id/textView_texto_forma_administracion_tratamiento_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/text_forma_administracion_tramiento_textview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_texto_dosis_tratamiento_mi_mascota" />
+
+        <TextView
+            android:id="@+id/textView_forma_administracion_tratamiento_mi_mascota"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView_texto_forma_administracion_tratamiento_mi_mascota"
+            app:layout_constraintTop_toBottomOf="@+id/textView_dosis_tramiento_mi_mascota" />
+
+        <Button
+            android:id="@+id/button_ver_diagnostico_tratamientos_mi_mascota"
+            android:layout_width="111dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/text_ver_diagnostico_tratamientos_mi_mascotabutton"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cliente.pantalla_pedir_cita"
+    android:background="#242832">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_pedir_cita"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/text_pedir_cita_button" />
+
+    <ImageButton
+        android:id="@+id/imageButton_confirmar_cita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_pedir_cita"
+        app:srcCompat="@drawable/confirmar_cita_button_selector" />
+
+    <ImageButton
+        android:id="@+id/imageButton_historial_citas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_confirmar_cita"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_proximas_citas"
+        app:srcCompat="@drawable/historial_citas_button_selector" />
+
+    <ImageButton
+        android:id="@+id/imageButton_proximas_citas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_confirmar_cita"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_pedir_cita"
+        app:srcCompat="@drawable/proximas_citas_button_selector" />
+</androidx.constraintlayout.widget.ConstraintLayout>

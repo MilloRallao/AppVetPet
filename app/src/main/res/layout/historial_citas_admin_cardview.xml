@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview_historial_citas_admin"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:backgroundTint="@color/colorNegative"
+    android:backgroundTintMode="add"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow_cardview">
+
+        <ImageView
+            android:id="@+id/imageView_imagen_mascota_historial_cita_admin"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_nombre_mascota_historial_cita_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textView_texto_motivo_historial_cita_admin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_imagen_mascota_historial_cita_admin" />
+
+        <TextView
+            android:id="@+id/textView_nombre_cliente_historial_cita_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView_imagen_mascota_historial_cita_admin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_texto_motivo_historial_cita_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_motivo_textview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView_imagen_mascota_historial_cita_admin"
+            app:layout_constraintTop_toBottomOf="@+id/textView_nombre_cliente_historial_cita_admin" />
+
+        <TextView
+            android:id="@+id/textView_motivo_historial_cita_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/textView_texto_motivo_historial_cita_admin"
+            app:layout_constraintTop_toBottomOf="@+id/textView_nombre_cliente_historial_cita_admin" />
+
+        <TextView
+            android:id="@+id/textView_fecha_historial_cita_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView_imagen_mascota_historial_cita_admin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_hora_historial_cita_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView_fecha_historial_cita_admin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_texto_cita_realizada_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:text="@string/text_cita_realizada_textview"
+            app:layout_constraintBottom_toTopOf="@+id/imageView_icono_cita_realizada_admin"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView_icono_cita_realizada_admin"
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="16dp"
+            android:adjustViewBounds="true"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/icono_realizado" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

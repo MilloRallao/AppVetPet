@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:backgroundTint="@color/colorAccent"
+    android:backgroundTintMode="add"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow_cardview">
+
+        <ImageView
+            android:id="@+id/imagen_mascota_mi_mascota"
+            android:layout_width="108dp"
+            android:layout_height="92dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/textView_nombre_mascota_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagen_mascota_mi_mascota" />
+
+        <TextView
+            android:id="@+id/textView_especie_mascota_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_nombre_mascota_mi_mascota" />
+
+        <TextView
+            android:id="@+id/textView_edad_mascota_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/divider1"
+            app:layout_constraintTop_toBottomOf="@+id/textView_nombre_mascota_mi_mascota" />
+
+        <TextView
+            android:id="@+id/textView_sexo_mascota_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/divider3"
+            app:layout_constraintTop_toBottomOf="@+id/textView_nombre_mascota_mi_mascota" />
+
+        <TextView
+            android:id="@+id/textView_peso_mascota_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_nombre_mascota_mi_mascota" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintStart_toEndOf="@+id/textView_especie_mascota_mi_mascota"
+            app:layout_constraintTop_toBottomOf="@+id/textView_nombre_mascota_mi_mascota" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toStartOf="@+id/textView_sexo_mascota_mi_mascota"
+            app:layout_constraintStart_toEndOf="@+id/textView_edad_mascota_mi_mascota"
+            app:layout_constraintTop_toBottomOf="@+id/textView_nombre_mascota_mi_mascota" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toStartOf="@+id/textView_peso_mascota_mi_mascota"
+            app:layout_constraintTop_toBottomOf="@+id/textView_nombre_mascota_mi_mascota" />
+
+        <Button
+            android:id="@+id/button_citas_mi_mascota"
+            android:layout_width="98dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/text_citas_button"
+            app:layout_constraintBottom_toTopOf="@+id/button_vacunas"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button_vacunas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_vacunas_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_diagnosticos"
+            app:layout_constraintStart_toEndOf="@+id/button_tratamientos" />
+
+        <Button
+            android:id="@+id/button_diagnosticos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_diagnosticos_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton_info_mi_mascota"
+            android:layout_width="54dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="28dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toStartOf="@+id/button_consultas_mi_mascota"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toEndOf="@+id/button_citas_mi_mascota"
+            app:layout_constraintTop_toBottomOf="@+id/divider2"
+            app:srcCompat="@drawable/info_button_selector" />
+
+        <Button
+            android:id="@+id/button_consultas_mi_mascota"
+            android:layout_width="108dp"
+            android:layout_height="57dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/text_consultas_button"
+            app:layout_constraintBottom_toTopOf="@+id/button_vacunas"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/button_tratamientos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_tratamientos_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

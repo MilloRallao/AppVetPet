@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_ver_cliente"
+    android:layout_width="match_parent"
+    android:layout_height="275dp"
+    android:backgroundTint="@color/colorAccent"
+    android:backgroundTintMode="add"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow_cardview"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView_cliente"
+            android:layout_width="120dp"
+            android:layout_height="85dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_dni_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_cliente" />
+
+        <TextView
+            android:id="@+id/textView_nombre_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/divider2_cliente"
+            app:layout_constraintStart_toEndOf="@+id/divider1_cliente"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_cliente" />
+
+        <TextView
+            android:id="@+id/textView_numero_mascotas_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_cliente" />
+
+        <View
+            android:id="@+id/divider1_cliente"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintStart_toEndOf="@+id/textView_dni_cliente"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_cliente" />
+
+        <View
+            android:id="@+id/divider2_cliente"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toStartOf="@+id/textView_numero_mascotas_cliente"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_cliente" />
+
+        <ImageButton
+            android:id="@+id/imageButton_llamar_cliente"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_nombre_cliente"
+            app:srcCompat="@drawable/llamada_principal_button_selector" />
+
+        <Button
+            android:id="@+id/button_ver_mascotas_cliente"
+            android:layout_width="110dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/text_ver_mascotas_cliente_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_dni_cliente" />
+
+        <Button
+            android:id="@+id/button_ver_cliente"
+            android:layout_width="105dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/text_ver_cliente_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_numero_mascotas_cliente" />
+
+        <Button
+            android:id="@+id/button_ver_consultas_cliente"
+            android:layout_width="110dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/text_ver_consultas_cliente_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button_ver_citas_cliente"
+            android:layout_width="105dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/text_ver_citas_cliente_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

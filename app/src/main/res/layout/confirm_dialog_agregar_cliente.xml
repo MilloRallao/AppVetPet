@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#891976D2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="@string/app_name"
+        android:padding="8dp"
+        android:src="@drawable/dialog_agregar_cliente_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_volver_agregar_cliente"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/volver_background" />
+
+        <Button
+            android:id="@+id/button_agregar_mascota"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/agregar_mascota_background" />
+    </LinearLayout>
+</LinearLayout>

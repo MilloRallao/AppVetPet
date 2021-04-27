@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242832"
+    tools:context=".admin.pantalla_consultas_individual_admin">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_consulta_individual_admin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_individual_usuario_admin"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:backgroundTint="@color/colorAccent"
+        android:backgroundTintMode="add"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_consulta_individual_admin">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shadow_cardview"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_fecha_consulta_individual_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_hora_consulta_individual_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toEndOf="@+id/textView_fecha_consulta_individual_admin"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView_mascota_consulta_individual_admin"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_fecha_consulta_individual_admin" />
+
+            <TextView
+                android:id="@+id/textView_nombre_mascota_consulta_individual_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/textView_mensaje_consulta_individual_admin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_mascota_consulta_individual_admin" />
+
+            <TextView
+                android:id="@+id/textView_asunto_consulta_individual_admin"
+                android:layout_width="230dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/textView_hora_consulta_individual_admin"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView_adjunto_1_consulta_individual_admin"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginBottom="8dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView_adjuntos_consulta_individual_admin"
+                app:srcCompat="@drawable/icono_imagen_previa" />
+
+            <ImageView
+                android:id="@+id/imageView_adjunto_2_consulta_individual_admin"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView_adjunto_3_consulta_individual_admin"
+                app:layout_constraintStart_toEndOf="@+id/imageView_adjunto_1_consulta_individual_admin"
+                app:srcCompat="@drawable/icono_imagen_previa" />
+
+            <ImageView
+                android:id="@+id/imageView_adjunto_3_consulta_individual_admin"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/icono_imagen_previa" />
+
+            <TextView
+                android:id="@+id/textView_adjuntos_consulta_individual_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="28dp"
+                android:text="@string/text_adjuntos_textview"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_mensaje_consulta_individual_admin"
+                android:layout_width="230dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView_mascota_consulta_individual_admin"
+                app:layout_constraintTop_toBottomOf="@+id/textView_asunto_consulta_individual_admin" />
+
+            <ImageView
+                android:id="@+id/imageView_zoom_1_admin"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/app_name"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_adjunto_1_consulta_individual_admin"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_adjunto_1_consulta_individual_admin"
+                app:layout_constraintStart_toStartOf="@+id/imageView_adjunto_1_consulta_individual_admin"
+                app:layout_constraintTop_toTopOf="@+id/imageView_adjunto_1_consulta_individual_admin"
+                app:srcCompat="@drawable/icono_zoom" />
+
+            <ImageView
+                android:id="@+id/imageView_zoom_2_admin"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/app_name"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_adjunto_2_consulta_individual_admin"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_adjunto_2_consulta_individual_admin"
+                app:layout_constraintStart_toStartOf="@+id/imageView_adjunto_2_consulta_individual_admin"
+                app:layout_constraintTop_toTopOf="@+id/imageView_adjunto_2_consulta_individual_admin"
+                app:srcCompat="@drawable/icono_zoom" />
+
+            <ImageView
+                android:id="@+id/imageView_zoom_3_admin"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/app_name"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_adjunto_3_consulta_individual_admin"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_adjunto_3_consulta_individual_admin"
+                app:layout_constraintStart_toStartOf="@+id/imageView_adjunto_3_consulta_individual_admin"
+                app:layout_constraintTop_toTopOf="@+id/imageView_adjunto_3_consulta_individual_admin"
+                app:srcCompat="@drawable/icono_zoom" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button_responder_consulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_responder_consulta_button"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview_individual_usuario_admin" />
+
+    <EditText
+        android:id="@+id/editText_respuesta_consulta_admin"
+        android:layout_width="260dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/text_respuesta_editText"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:maxLength="228"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview_individual_usuario_admin" />
+
+    <Button
+        android:id="@+id/button_enviar_respuesta_consulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_responder_button"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_respuesta_consulta_admin" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_individual_respuesta_admin"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorAccent"
+        android:backgroundTintMode="add"
+        android:visibility="invisible"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview_individual_usuario_admin">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shadow_cardview"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_fecha_respuesta_veterinario_consulta_individual_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_hora_respuesta_veterinario_consulta_individual_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toEndOf="@+id/textView_fecha_respuesta_veterinario_consulta_individual_admin"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_mensaje_respuesta_veterinario_consulta_individual_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/textview_mensaje_respuesta_consulta_individual"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/textView_hora_respuesta_veterinario_consulta_individual_admin"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView_avatar_veterinario_consulta_individual_admin"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_fecha_respuesta_veterinario_consulta_individual_admin"
+                app:srcCompat="@drawable/veterinario_icono" />
+
+            <TextView
+                android:id="@+id/textView_respuesta_veterinario_consulta_individual_admin"
+                android:layout_width="260dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView_avatar_veterinario_consulta_individual_admin"
+                app:layout_constraintTop_toBottomOf="@+id/textView_mensaje_respuesta_veterinario_consulta_individual_admin" />
+
+            <Button
+                android:id="@+id/button_cerrar_consulta_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="64dp"
+                android:text="@string/text_cerrar_consulta_button"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_respuesta_veterinario_consulta_individual_admin" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

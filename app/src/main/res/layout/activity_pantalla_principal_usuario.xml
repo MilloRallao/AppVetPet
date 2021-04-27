@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cliente.pantalla_principal_usuario"
+    android:background="#242832">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_principal_usuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton_mi_mascota_principal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_principal_usuario"
+        app:srcCompat="@drawable/mi_mascota_button_selector" />
+
+    <ImageButton
+        android:id="@+id/imageButton_mi_veterinario_principal_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_mi_mascota_principal"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_principal_usuario"
+        app:srcCompat="@drawable/mi_veterinario_button_selector" />
+
+    <ImageButton
+        android:id="@+id/imageButton_pedir_cita_principal_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_mi_mascota_principal"
+        app:srcCompat="@drawable/pedir_cita_button_selector" />
+
+    <ImageButton
+        android:id="@+id/imageButton_consulta_online_principal_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_pedir_cita_principal_user"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_mi_veterinario_principal_user"
+        app:srcCompat="@drawable/consulta_online_button_selector" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

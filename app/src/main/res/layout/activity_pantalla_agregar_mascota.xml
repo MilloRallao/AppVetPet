@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242832"
+    tools:context=".admin.pantalla_agregar_mascota">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_agregar_mascota"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_peso_mascota_agregar_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/text_peso_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_fecha_nacimiento_mascota_agregar_mascota" />
+
+    <TextView
+        android:id="@+id/textView_especie_mascota_agregar_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/text_especie_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_sexo_mascota_agregar_mascota" />
+
+    <TextView
+        android:id="@+id/textView_edad_mascota_agregar_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/text_edad_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_raza_mascota_agregar_mascota" />
+
+    <TextView
+        android:id="@+id/textView_fecha_nacimiento_mascota_agregar_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/text_fecha_nacimiento_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_edad_mascota_agregar_mascota" />
+
+    <TextView
+        android:id="@+id/textView_raza_mascota_agregar_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/text_raza_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_especie_mascota_agregar_mascota" />
+
+    <TextView
+        android:id="@+id/textView_nombre_mascota_agregar_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/text_nombre_button"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_elegir_foto_mascota" />
+
+    <TextView
+        android:id="@+id/textView_sexo_mascota_agregar_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/text_sexo_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_nombre_mascota_agregar_mascota" />
+
+    <Button
+        android:id="@+id/button_elegir_foto_mascota"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_seleccionar_imagen_button"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_foto_mascota" />
+
+    <ImageView
+        android:id="@+id/imageView_foto_mascota"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:tint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_agregar_mascota"
+        app:srcCompat="@drawable/icono_imagen_previa" />
+
+    <EditText
+        android:id="@+id/editText_nombre_mascota_agregar_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="@string/text_nombre_button"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_elegir_foto_mascota" />
+
+    <EditText
+        android:id="@+id/editText_raza_mascota_agregar_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="@string/text_raza_textview"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_especie_mascota_agregar_mascota" />
+
+    <EditText
+        android:id="@+id/editText_edad_mascota_agregar_mascota"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/text_edad_textview"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_edad_mascota_agregar_mascota"
+        app:layout_constraintTop_toBottomOf="@+id/editText_raza_mascota_agregar_mascota" />
+
+    <EditText
+        android:id="@+id/editText_fecha_nacimiento_mascota_agregar_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/text_fecha_nacimiento_textview"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_edad_mascota_agregar_mascota" />
+
+    <EditText
+        android:id="@+id/editText_peso_mascota_agregar_mascota"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="13dp"
+        android:ems="10"
+        android:hint="@string/text_peso_textview"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/textView_texto_peso_mascota_agregar_mascota"
+        app:layout_constraintTop_toBottomOf="@+id/editText_fecha_nacimiento_mascota_agregar_mascota"
+        android:importantForAutofill="no" />
+
+    <Spinner
+        android:id="@+id/spinner_edad_mascota_agregar_mascota"
+        style="@android:style/Widget.Spinner.DropDown"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_raza_mascota_agregar_mascota" />
+
+    <TextView
+        android:id="@+id/textView_texto_peso_mascota_agregar_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="112dp"
+        android:text="@string/text_kg_textview"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_fecha_nacimiento_mascota_agregar_mascota" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_agregar_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:clickable="true"
+        android:elevation="5dp"
+        app:borderWidth="3dp"
+        app:fabCustomSize="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="36dp"
+        app:srcCompat="@drawable/icono_hecho" />
+
+    <Spinner
+        android:id="@+id/spinner_sexo_mascota_agregar_mascota"
+        style="@android:style/Widget.Spinner.DropDown"
+        android:layout_width="215dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_nombre_mascota_agregar_mascota" />
+
+    <Spinner
+        android:id="@+id/spinner_especie_mascota_agregar_mascota"
+        style="@android:style/Widget.Spinner.DropDown"
+        android:layout_width="215dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_sexo_mascota_agregar_mascota" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

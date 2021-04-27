@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fondo"
+    tools:context=".admin.pantalla_agregar_diagnostico_tratamiento">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_agregar_diagnostico_tratamiento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_texto_diagnostico_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/text_diagnostico_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_titulo_diagnostico_agregar_diagnostico_tratamiento" />
+
+    <EditText
+        android:id="@+id/editText_diagnostico_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/text_diagnostico_hint_textview"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:maxLength="54"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_titulo_diagnostico_agregar_diagnostico_tratamiento" />
+
+    <TextView
+        android:id="@+id/textView_texto_anamnesis_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/text_anamnesis_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_diagnostico_agregar_diagnostico_tratamiento" />
+
+    <EditText
+        android:id="@+id/editText_anamnesis_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/text_anamnesis_hint_textview"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:maxLength="87"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_diagnostico_agregar_diagnostico_tratamiento" />
+
+    <TextView
+        android:id="@+id/textView_texto_pruebas_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/text_pruebas_diagnostico_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_anamnesis_agregar_diagnostico_tratamiento" />
+
+    <EditText
+        android:id="@+id/editText_pruebas_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/text_pruebas_hint_textview"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:maxLength="74"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_anamnesis_agregar_diagnostico_tratamiento" />
+
+    <View
+        android:id="@+id/divider_izquierda_diagnostico_agregar_diagnostico_tratamiento"
+        android:layout_width="125dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_agregar_diagnostico_tratamiento" />
+
+    <TextView
+        android:id="@+id/textView_texto_titulo_diagnostico_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_diagnostico_hint_textview"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/divider_derecha_diagnostico_agregar_diagnostico_tratamiento"
+        app:layout_constraintStart_toEndOf="@+id/divider_izquierda_diagnostico_agregar_diagnostico_tratamiento"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_agregar_diagnostico_tratamiento" />
+
+    <View
+        android:id="@+id/divider_derecha_diagnostico_agregar_diagnostico_tratamiento"
+        android:layout_width="125dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_agregar_diagnostico_tratamiento" />
+
+    <View
+        android:id="@+id/divider_izquierda_tratamiento_agregar_diagnostico_tratamiento"
+        android:layout_width="125dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_pruebas_agregar_diagnostico_tratamiento" />
+
+    <TextView
+        android:id="@+id/textView_texto_titulo_tratamiento_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/text_tratamiento_textview"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/divider_derecha_tratamiento_agregar_diagnostico_tratamiento"
+        app:layout_constraintStart_toEndOf="@+id/divider_izquierda_tratamiento_agregar_diagnostico_tratamiento"
+        app:layout_constraintTop_toBottomOf="@+id/editText_pruebas_agregar_diagnostico_tratamiento" />
+
+    <View
+        android:id="@+id/divider_derecha_tratamiento_agregar_diagnostico_tratamiento"
+        android:layout_width="125dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_pruebas_agregar_diagnostico_tratamiento" />
+
+    <TextView
+        android:id="@+id/textView_texto_farmaco_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/text_farmaco_tratamiento_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_titulo_tratamiento_agregar_diagnostico_tratamiento" />
+
+    <EditText
+        android:id="@+id/editText_farmaco_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/text_farmaco_hint_textview"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:maxLength="40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_titulo_tratamiento_agregar_diagnostico_tratamiento" />
+
+    <TextView
+        android:id="@+id/textView_texto_dosis_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/text_dosis_tratamientos_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_farmaco_agregar_diagnostico_tratamiento" />
+
+    <EditText
+        android:id="@+id/editText_dosis_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/text_dosis_dialog_textview"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:maxLength="40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_farmaco_agregar_diagnostico_tratamiento" />
+
+    <TextView
+        android:id="@+id/textView_texto_forma_administracion_agregar_diagnostico_tratamiento"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/text_forma_administracion_tramiento_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_dosis_agregar_diagnostico_tratamiento" />
+
+    <EditText
+        android:id="@+id/editText_forma_administracion_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/text_forma_administracion_hint_textview"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:maxLength="48"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_dosis_agregar_diagnostico_tratamiento" />
+
+    <TextView
+        android:id="@+id/textView_texto_fecha_inicio_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/text_fecha_inicio_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_forma_administracion_agregar_diagnostico_tratamiento" />
+
+    <EditText
+        android:id="@+id/editText_fecha_inicio_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/text_fecha_inicio_hint_textview"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_forma_administracion_agregar_diagnostico_tratamiento" />
+
+    <TextView
+        android:id="@+id/textView_texto_fecha_fin_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/text_fecha_fin_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_fecha_inicio_agregar_diagnostico_tratamiento" />
+
+    <EditText
+        android:id="@+id/editText_fecha_fin_agregar_diagnostico_tratamiento"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/text_fecha_fin_hint_textview"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_fecha_fin_agregar_diagnostico_tratamiento"
+        app:layout_constraintTop_toBottomOf="@+id/editText_fecha_inicio_agregar_diagnostico_tratamiento" />
+
+    <Button
+        android:id="@+id/button_agregar_diagnostico_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_fecha_fin_agregar_diagnostico_tratamiento" />
+
+    <Spinner
+        android:id="@+id/spinner_fecha_fin_agregar_diagnostico_tratamiento"
+        style="@android:style/Widget.Spinner.DropDown"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:gravity="start|top"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_fecha_inicio_agregar_diagnostico_tratamiento" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242832"
+    tools:context=".admin.pantalla_ver_consultas_online">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_ver_consultas_online"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/text_consultas_button" />
+
+    <ImageButton
+        android:id="@+id/imageButton_consultas_abiertas_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_ver_consultas_online"
+        app:srcCompat="@drawable/consultas_abiertas_button_selector" />
+
+    <ImageButton
+        android:id="@+id/imageButton_consultas_cerradas_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_consultas_abiertas_admin"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_ver_consultas_online"
+        app:srcCompat="@drawable/consultas_cerradas_button_selector" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "166899452695",
+    "firebase_url": "https://vetpet-proyecto-dam.firebaseio.com",
+    "project_id": "vetpet-proyecto-dam",
+    "storage_bucket": "vetpet-proyecto-dam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166899452695:android:41ec3581b48c5701ab0552",
+        "android_client_info": {
+          "package_name": "com.davidcurbelo.vetpetproyectodam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166899452695-1f1hoik3jrgapeml2jg43kqvvkvb227s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxoiTc4gsvdhSV88Hean769n3N4wHUwUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166899452695-1f1hoik3jrgapeml2jg43kqvvkvb227s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

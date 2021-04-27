@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_mi_veterinario"
+    tools:context=".cliente.pantalla_mi_mascota_informacion">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_informacion_mi_mascota"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_mascota_informacion_mi_mascota"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_nombre_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="true"
+        android:textColor="@color/color_fondo"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_texto_especie_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/text_especie_info_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_nombre_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_especie_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_nombre_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_texto_raza_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_raza_info_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_especie_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_raza_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_especie_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_texto_sexo_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_sexo_info_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_raza_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_sexo_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_raza_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_texto_fecha_nacimiento_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_fecha_nacimiento_info_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_sexo_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_fecha_nacimiento_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_sexo_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_texto_edad_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_edad_info_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_fecha_nacimiento_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_edad_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_fecha_nacimiento_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_texto_edad_humana_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_edad_humana_mascota_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_edad_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_edad_humana_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_edad_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_texto_peso_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_peso_info_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_edad_humana_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_peso_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_edad_humana_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_texto_vacunas_mascota__informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_vacunas_info_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_peso_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_vacunas_mascota__informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_peso_mascota_informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_texto_diagnosticos_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_diagnosticos_info_textview"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_texto_vacunas_mascota__informacion_mi_mascota" />
+
+    <TextView
+        android:id="@+id/textView_diagnosticos_mascota_informacion_mi_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_vacunas_mascota__informacion_mi_mascota" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

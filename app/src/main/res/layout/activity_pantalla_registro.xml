@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".pantalla_registro">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondo"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:title="@string/text_registro_textview" />
+
+            <TextView
+                android:id="@+id/textView_principal_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="@string/text_registro_inicio_textview"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView_cliente_mascota"
+                android:layout_width="wrap_content"
+                android:layout_height="196dp"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/perro_cliente" />
+
+            <TextView
+                android:id="@+id/textView_mapa_top"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/text_registro_map_top_textview"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="367dp"
+                android:layout_height="298dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:id="@+id/textView_mapa_bottom"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/text_registro_mapa_down_textview"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView_mascota_veterinario"
+                android:layout_width="256dp"
+                android:layout_height="201dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="80dp"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/perro_veterinario" />
+
+            <TextView
+                android:id="@+id/textView_contacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="75dp"
+                android:text="@string/text_registro_contacto_textview"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageButton_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/facebook" />
+
+            <ImageButton
+                android:id="@+id/imageButton_instagram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/instagram" />
+
+            <ImageButton
+                android:id="@+id/imageButton_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/twitter" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

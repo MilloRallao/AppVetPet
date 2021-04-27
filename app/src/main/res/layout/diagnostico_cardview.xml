@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview_diagnostico"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:backgroundTint="@color/colorAccent"
+    android:backgroundTintMode="add"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow_cardview">
+
+        <TextView
+            android:id="@+id/textView_texto_fecha_diagnostico_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/text_fecha_textview_diagnosticos"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_fecha_diagnostico_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/textView_texto_fecha_diagnostico_mi_mascota"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_texto_diagnostico_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/text_diagnostico_textview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_texto_fecha_diagnostico_mi_mascota" />
+
+        <TextView
+            android:id="@+id/textView_diagnostico_mi_mascota"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/floatingActionButton_editar_diagnostico"
+            app:layout_constraintStart_toEndOf="@+id/textView_texto_diagnostico_mi_mascota"
+            app:layout_constraintTop_toBottomOf="@+id/textView_fecha_diagnostico_mi_mascota" />
+
+        <TextView
+            android:id="@+id/textView_texto_descripcion_diagnostico_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/text_descripcion_diagnostico_textview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_texto_diagnostico_mi_mascota" />
+
+        <TextView
+            android:id="@+id/textView_descripcion_diagnostico_mi_mascota"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView_texto_descripcion_diagnostico_mi_mascota"
+            app:layout_constraintTop_toBottomOf="@+id/textView_diagnostico_mi_mascota" />
+
+        <TextView
+            android:id="@+id/textView_texto_pruebas_diagnostico_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/text_pruebas_diagnostico_textview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_texto_descripcion_diagnostico_mi_mascota" />
+
+        <TextView
+            android:id="@+id/textView_pruebas_diagnostico_mi_mascota"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView_texto_pruebas_diagnostico_mi_mascota"
+            app:layout_constraintTop_toBottomOf="@+id/textView_descripcion_diagnostico_mi_mascota" />
+
+        <TextView
+            android:id="@+id/textView_texto_tratamiento_diagnostico_mi_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/text_tratamiento_diagnostico_textview"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_texto_pruebas_diagnostico_mi_mascota" />
+
+        <TextView
+            android:id="@+id/textView_tratamiento_diagnostico_mi_mascota"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/button_ver_tratamiento"
+            app:layout_constraintStart_toEndOf="@+id/textView_texto_tratamiento_diagnostico_mi_mascota"
+            app:layout_constraintTop_toBottomOf="@+id/textView_pruebas_diagnostico_mi_mascota" />
+
+        <Button
+            android:id="@+id/button_ver_tratamiento"
+            android:layout_width="118dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_ver_tratamiento_button"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_pruebas_diagnostico_mi_mascota" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton_editar_diagnostico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="@color/colorAccent"
+            android:clickable="true"
+            android:tint="@color/colorPrimary"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxImageSize="30dp"
+            app:srcCompat="@drawable/icono_editar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

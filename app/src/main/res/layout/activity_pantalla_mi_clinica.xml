@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242832"
+    tools:context=".admin.pantalla_mi_clinica">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_mi_clinica_admin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/text_mi_clinica_veterinaria_button" />
+
+    <Button
+        android:id="@+id/button_editar_informacion_mi_clinica"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#978E8E"
+        android:text="@string/text_editar_info_button"
+        android:textAllCaps="true"
+        android:textColor="#333131"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView_mi_clinica"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView_mi_clinica"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_editar_informacion_mi_clinica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_mi_clinica_admin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView_logo_clinica_admin"
+                    android:layout_width="180dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="32dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editText_horario_hora_inicio_clinica_admin"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="9dp"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:importantForAutofill="no"
+                    android:inputType="date"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_horario_clinica_admin"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_horario_dias_clinica_admin" />
+
+                <EditText
+                    android:id="@+id/editText_codigo_postal_clinica_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="@string/text_codigo_postal_textview"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_localizacion_clinica_admin"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_direccion_clinica_admin" />
+
+                <EditText
+                    android:id="@+id/editText_horario_hora_fin_clinica_admin"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="80dp"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:importantForAutofill="no"
+                    android:inputType="date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_horario_dias_clinica_admin" />
+
+                <EditText
+                    android:id="@+id/editText_telefono1_clinica_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="@string/text_telefono1_textview"
+                    android:importantForAutofill="no"
+                    android:inputType="phone"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_info_clinica_admin"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_web_clinica_admin" />
+
+                <ImageView
+                    android:id="@+id/imageView_info_clinica_admin"
+                    android:layout_width="65dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="80dp"
+                    android:contentDescription="@string/app_name"
+                    android:tint="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_nombre_clinica_admin"
+                    app:srcCompat="@drawable/info2" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="10dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/colorPrimaryDark"
+                    app:layout_constraintEnd_toStartOf="@+id/editText_horario_hora_fin_clinica_admin"
+                    app:layout_constraintStart_toEndOf="@+id/editText_horario_hora_inicio_clinica_admin"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_horario_dias_clinica_admin" />
+
+                <EditText
+                    android:id="@+id/editText_localidad_clinica_admin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="@string/text_localidad_textview"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_localizacion_clinica_admin"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_codigo_postal_clinica_admin" />
+
+                <ImageView
+                    android:id="@+id/imageView_horario_clinica_admin"
+                    android:layout_width="65dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="96dp"
+                    android:contentDescription="@string/app_name"
+                    android:tint="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_localizacion_clinica_admin"
+                    app:srcCompat="@drawable/horario" />
+
+                <EditText
+                    android:id="@+id/editText_direccion_clinica_admin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="28dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="@string/text_direccion_textview"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_localizacion_clinica_admin"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_telefono2_clinica_admin" />
+
+                <EditText
+                    android:id="@+id/editText_horario_dias_clinica_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="28dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="@string/text_horario_textview"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_horario_clinica_admin"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_localidad_clinica_admin" />
+
+                <EditText
+                    android:id="@+id/editText_web_clinica_admin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="@string/text_web_textview"
+                    android:importantForAutofill="no"
+                    android:inputType="textWebEditText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_info_clinica_admin"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_nombre_clinica_admin" />
+
+                <ImageView
+                    android:id="@+id/imageView_localizacion_clinica_admin"
+                    android:layout_width="65dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="96dp"
+                    android:contentDescription="@string/app_name"
+                    android:tint="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_info_clinica_admin"
+                    app:srcCompat="@drawable/localizacion2" />
+
+                <EditText
+                    android:id="@+id/editText_telefono2_clinica_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="@string/text_telefono2_textview"
+                    android:importantForAutofill="no"
+                    android:inputType="phone"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_info_clinica_admin"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_telefono1_clinica_admin" />
+
+                <TextView
+                    android:id="@+id/textView_nombre_clinica_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_logo_clinica_admin" />
+
+                <ImageView
+                    android:id="@+id/imageView_correo_clinica_admin"
+                    android:layout_width="65dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="64dp"
+                    android:contentDescription="@string/app_name"
+                    android:tint="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView_horario_clinica_admin"
+                    app:srcCompat="@drawable/mensaje2" />
+
+                <EditText
+                    android:id="@+id/editText_email_clinica_admin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="28dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="@string/text_email_usuario_button"
+                    android:importantForAutofill="no"
+                    android:inputType="textWebEmailAddress"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_correo_clinica_admin"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_horario_hora_inicio_clinica_admin" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondo_mi_veterinario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cliente.pantalla_mi_veterinario"
+    android:background="#242832">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_mi_veterinario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/text_bienvenida_mi_veterinario_textview" />
+
+    <ImageView
+        android:id="@+id/imageView_logo_clinica"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_mi_veterinario" />
+
+    <TextView
+        android:id="@+id/textView_nombre_clinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_logo_clinica" />
+
+    <ImageView
+        android:id="@+id/imageView_llamada_clinica"
+        android:layout_width="52dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_nombre_clinica"
+        app:srcCompat="@drawable/llamada_principal_button_selector" />
+
+    <ImageView
+        android:id="@+id/imageView_info_clinica"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="276dp"
+        android:contentDescription="@string/app_name"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_mi_veterinario"
+        app:srcCompat="@drawable/info2" />
+
+    <TextView
+        android:id="@+id/textView_web_clinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_info_clinica"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_llamada_clinica" />
+
+    <TextView
+        android:id="@+id/textView_telefono1_clinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintStart_toEndOf="@+id/imageView_info_clinica"
+        app:layout_constraintTop_toBottomOf="@+id/textView_web_clinica" />
+
+    <TextView
+        android:id="@+id/textView_telefono2_clinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintStart_toEndOf="@+id/imageView_info_clinica"
+        app:layout_constraintTop_toBottomOf="@+id/textView_telefono1_clinica" />
+
+    <ImageView
+        android:id="@+id/imageView_localizacion_clinica"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/app_name"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_info_clinica"
+        app:srcCompat="@drawable/localizacion2" />
+
+    <TextView
+        android:id="@+id/textView_direccion_clinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_localizacion_clinica"
+        app:layout_constraintTop_toBottomOf="@+id/textView_telefono2_clinica" />
+
+    <TextView
+        android:id="@+id/textView_codigo_postal_clinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_localizacion_clinica"
+        app:layout_constraintTop_toBottomOf="@+id/textView_direccion_clinica" />
+
+    <TextView
+        android:id="@+id/textView_localidad_clinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_localizacion_clinica"
+        app:layout_constraintTop_toBottomOf="@+id/textView_codigo_postal_clinica" />
+
+    <ImageView
+        android:id="@+id/imageView_horario_clinica"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_localizacion_clinica"
+        app:srcCompat="@drawable/horario" />
+
+    <TextView
+        android:id="@+id/textView_horario_dias_clinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_horario_clinica"
+        app:layout_constraintTop_toBottomOf="@+id/textView_localidad_clinica" />
+
+    <TextView
+        android:id="@+id/textView_horario_horas_clinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_horario_clinica"
+        app:layout_constraintTop_toBottomOf="@+id/textView_horario_dias_clinica" />
+
+    <TextView
+        android:id="@+id/textView_abierto_cerrado_horario_clinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_horario_clinica"
+        app:layout_constraintTop_toBottomOf="@+id/textView_horario_horas_clinica" />
+
+    <ImageView
+        android:id="@+id/imageView_correo_clinica"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_horario_clinica"
+        app:srcCompat="@drawable/mensaje2" />
+
+    <TextView
+        android:id="@+id/textView_email_clinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_correo_clinica"
+        app:layout_constraintTop_toBottomOf="@+id/textView_abierto_cerrado_horario_clinica" />
+
+    <ImageButton
+        android:id="@+id/imageButton_facebook_clinica"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toEndOf="@+id/imageView_correo_clinica"
+        app:layout_constraintTop_toBottomOf="@+id/textView_email_clinica"
+        app:srcCompat="@drawable/facebook_icon" />
+
+    <Button
+        android:id="@+id/button_ver_mapa"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="176dp"
+        android:text="@string/text_ver_mapa_button"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/textView_localidad_clinica" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

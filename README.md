@@ -7,9 +7,13 @@ En cuanto al administrador, la aplicación permite gestionar los clientes de una
 Se usa una base de datos no relacional como Firebase para guardar todos los datos de los clientes, clínicas, veterinarios, mascotas, tratamientos y más.
 
 Para iniciar sesión como Veterinario:
+
 Usuario: davidcurbelomartin@gmail.com
+
 Contraseña: 123456
 
 Para iniciar sesión como Cliente:
+
 Usuario: pepepaco@gmail.com
+
 Contraseña: 123456
